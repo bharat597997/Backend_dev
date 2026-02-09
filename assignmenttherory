@@ -1,0 +1,96 @@
+[1] Difference Between Synchronous and Asynchronous File Operations
+(a) Synchronous Operations
+1. Execute one task at a time.
+2. Block the execution until the file operation is completed.
+3. Use methods like readFileSync() and writeFileSync().
+4. Simple to use.
+5. Not suitable for large or real-time applications.
+
+(b) Asynchronous Operations
+1. Do not block program execution.
+2. Run in the background.
+3. Use methods like readFile() and writeFile().
+4. Improve performance.
+5.Recommended for real-world applications.
+
+------------------------------------------------------------------------------------------
+
+[2] When should you use file streams instead of reading the entire file?
+
+1. When working with very large files.
+2. When memory efficiency is required.
+3.When processing data in chunks.
+4.For handling videos, logs, or large datasets.
+5.When continuous data processing is needed.
+
+--------------------------------------------------------------------------------------------
+
+[3] Explain the purpose of the ‘utf8’ encoding parameter in file operations?
+
+1. Converts binary data into readable text.
+2. Returns file content as a string.
+3. Prevents returning raw Buffer objects.
+4. UTF-8 is a standard character encoding format.
+5. Used when reading text files.
+
+----------------------------------------------------------------------------------------------
+
+[4] What are the common error codes in file system operations and what do they mean?
+
+
+1. ENOENT – File or directory not found.
+2. EACCES – Permission denied.
+3. EEXIST – File already exists.
+4. ENOTDIR – Path is not a directory.
+5. EISDIR – Path is a directory.
+6. EMFILE – Too many open files.
+
+----------------------------------------------------------------------------------------------
+
+[5] How would you safely delete a directory with all its contents?
+
+
+1. Use fs.rm() method.
+2. Use recursive: true to delete all files inside.
+3. Use force: true to avoid errors.
+4. Always verify the folder path before deleting.
+5. Prevents accidental data loss.
+
+----------------------------------------------------------------------------------------------
+
+[6] Explain the concept of piping in streams with an example.
+
+1. Connects a readable stream to a writable stream.
+2. Transfers data automatically in chunks.
+3. Used for copying files.
+4. Reduces manual handling of data.
+5. Improves efficiency and performance.
+
+-----------------------------------------------------------------------------------------------
+
+
+[7] Why is it important to handle errors in file operations?
+
+1. Prevents application crashes.
+2. Helps in debugging.
+3. Improves application stability.
+4. Provides better user experience.
+5. Handles missing files or permission issues properly.
+
+------------------------------------------------------------------------------------------------
+
+[8] What is the difference between writeFile and appendFile methods?
+
+(a) writeFile()
+
+1. Creates a new file.
+2. Overwrites existing content.
+3. Removes old data.
+
+(b) appendFile()
+
+1. Adds data at the end of file.
+2. Keeps existing content.
+3. Does not delete old data.
+
+-----------------------------------------------------------------------------------------------------
